@@ -13,7 +13,9 @@ if(isset($_POST['submit'])){
    if($numRows==1){
 		
     		$_SESSION['client'] = $row['username'];
-			header("location: dashboard.php");
+				<script>
+			document.location="dashboard.php";
+			</script>
         
 		}else{
 			$fail = "Invalid Login Credentials";
@@ -45,7 +47,9 @@ if(isset($_POST['submit'])){
     
     
 			$_SESSION['client'] = $row['username'];
-			header("location: dashboard.php");
+				<script>
+			document.location="dashboard.php";
+			</script>
         
 		}else{
 			$fail = "Invalid Login Credentials";
